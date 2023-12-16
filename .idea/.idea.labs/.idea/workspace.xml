@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a88e7c45-0bdd-4f66-9979-200da129994c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.is-oop-labs/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.is-oop-labs/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.is-oop-labs/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.is-oop-labs/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/is-oop-labs.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/is-oop-labs.sln.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/is-oop-labs.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs.sln.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/Abstractions/DirectoryAbstraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/Abstractions/FileAbstraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/FileSystems/DisconnectedFileSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/FileSystems/LocalFileSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/IAbstraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Entities/IFileSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Exceptions/FileSystemException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Exceptions/InvalidValueException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Exceptions/ParsingException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/ConnectCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/CopyCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/DeleteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/DisconnectCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/GotoCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/ListCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/MoveCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/RenameCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Commands/ShowCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Contexts/Context.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Controllers/ApplicationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Factories/FileSystemsFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Factories/WritersFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/CommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/ConnectHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/DisconnectHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/FileCopyHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/FileDeleteHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/FileMoveHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/FileRenameHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/FileShowHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/TreeGotoHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Handlers/TreeListHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/IAbstractionVisitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/ICommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/ICommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/IFileSystemsFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/IFlagsParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/IWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/IWritersFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Parsers/CommandParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Parsers/FlagsParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Visitors/DirectoryVisitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Visitors/ListVisitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab4/Services/Writers/ConsoleWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lab4.Tests/CommandsParserTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/dotnet.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pervent_config_chages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Itmo.ObjectOrientedProgramming.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab1/Lab1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/Lab2.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab3/Lab3.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab5/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lab1.Tests/Lab1.Tests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lab2.Tests/Lab2.Tests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lab3.Tests/Lab3.Tests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lab5.Tests/Lab5.Tests.csproj" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="editable-svg" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab-4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;searchQuery&quot;: &quot;https://github.com/maksimugus/labs.git&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;maksimugus&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;searchQuery&quot;: &quot;https://github.com/maksimugus/labs.git&quot;,
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;maksimugus&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c04e180b-a8f9-41d8-8de2-961a48762cf2" />
+        <option name="url" value="https://github.com/maksimugus/labs.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bce2ae4f833b4ee28ec245becb1277c889878/5d/627b3911/SocketType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ccc52bc0eb3d4fba86bf451e549b620d105f0/01/5b582ba2/XUnitRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dd85d1af76a544e1a8083607f687e374b1d8a0/92/9ae812c8/PortableThreadPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18e74818638eb14a98ec7d3e1dd4ad12be5b4c6af739aa755c7310d39e1b52df/Assert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/38284ca4f4afe378f96fccac3e179f4bceda7a74eb151623b66d2dc3634d9b/ExceptionAggregator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b92f859131bde25d0f7a63de08963e995d1e1426e584dfd4b8e833d2d3dba/ExecutionTimer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3d39b7365ca42b2d8c4e732f62ab42f8e55276a28f58835d74b42ccc2bc1/XunitTestRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3d5314c4b5f391de6f26e7ce0d430d6d2aa1d7a44530b874fdbb1a4a97374/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3e61e4a3c9b4fe27c67e1ef2b798a39225ebd8646c31ae8d6e7f58e3812d3e/XunitTestAssemblyRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ef0bca2d47bbb68ea06d592db260ce643854e07d5371166afbd7eba1774aa8/XunitTestFrameworkExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46726463b787c3ed152b9086e4f4fb179b8be25fd53c18325c537f6912024e9/XunitTheoryTestCaseRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/537077dd7bfe2a87e54788c7df3634501f6ec4375670fcbffae3bcdbe6e31e/XunitTestMethodRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6349d6f810b2e22425103cd5eaf1dc8ec53343bba52244a44a6132f31848768/TestClassRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6879c9ed20391a5ccfea363be5964fbcfe4f1dfde9558aa84b36df6b6ec92c6/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/794bcfedceb3c6d957fbddf0e1c9a04afca77f9b5470c6859466cfba35e1ddb1/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/816dbaba8a29ece3dd3dc326642858d27d2d19142f9a2109bb04617985ec9/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/86d2b9c78b591734798f8cda38f4b33a7fd2549de65eda1c036a6f12255e6/TestCollectionRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/95fa18a2d2c33478b431f364c6f8cf3f4c8dc2e44ce1e35bcb8ec26224c56/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97dcfb9497a64d9a78bfca4ec28b52c457d66d64c9bc4d602cfdb35744f918e/TestCaseRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9f278164ad6128362ea14ee916dddee74c2e5eb5f710e8322a38bdd27189d7/TestFrameworkExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a53b6656d53296976cb3cae7c3f3c3797af4d1063d91228a4f1dabbd5398890/XunitTestInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b2e2569a599c90377c1a97627ad8774b6db45b50adadbf7ef077d29896d719/RuntimeHelpers.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc55ae671a88627605bb9f3e3d91e26d30e97784e7bbb87f3eee711195b5c3/Future.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc8cc187972c1ce2b8b49597e9c9db949116a983773a42914644475938394b8/XunitTheoryTestCase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bdec8019c5ea2912560a1357d7a35475d23d4b32f5acd8d46310d4c7478/TestAssemblyRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c17c71b99fd283b69b3ef1472475e17d5bd798c732412b03ad37037b44b185/ThreadPoolWorkQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3ec25c53b94f51fa21da479c513e551efee2b5ae49a79934686d2bb714d46/TestInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d5bbff7f0797f8a5eac558803fc11ee7d94c9e84440dc58bc674915efec8/TestRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b3bf527769cb3295444e29d617bf2ebe5666bbe8e9c881a31444ba66846cfa/BooleanAsserts.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ee38174fc3ee51642de584534277748c6f479e4e87ccc9cd28a551e5c3e7c82/XunitTestCollectionRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ee456ec7f2e479b4eaa66183eaa0d1365ef16c4615282c4e7dccacdcc14dda/ArgumentNullException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fa89f150e61fcb98d99f99d4228756e848229b425ae861ae7c6ab45b33bb35/XunitTestClassRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fbd438bbbcc016366027295f46e0862415ca37d1f8ada5746862442e8db81e9c/TestMethodRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lab4/Services/Commands/ConnectCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/DeleteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/DeleteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/DeleteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/DeleteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/GoToCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/GoToCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ListCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ListCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ListCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/MoveCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/MoveCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/RenameCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/RenameCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/RenameCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ShowCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/maksi/RiderProjects/labs/src/Lab4/Services/Commands/ShowCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://ConnectCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CopyCommand.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2VOaOqzsNyXAXID5z1KuZwBq83t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\maksi\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\maksi\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\maksi\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a88e7c45-0bdd-4f66-9979-200da129994c" name="Changes" comment="" />
+      <created>1694709553236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694709553236</updated>
+      <workItem from="1694709556795" duration="171000" />
+      <workItem from="1694709752879" duration="12835000" />
+      <workItem from="1694793946851" duration="7632000" />
+      <workItem from="1695493353473" duration="113000" />
+      <workItem from="1695502700637" duration="821000" />
+      <workItem from="1695558268892" duration="8207000" />
+      <workItem from="1695576934166" duration="6961000" />
+      <workItem from="1695658641027" duration="8404000" />
+      <workItem from="1696017245052" duration="14726000" />
+      <workItem from="1696273240329" duration="10902000" />
+      <workItem from="1696324755495" duration="3225000" />
+      <workItem from="1696335033938" duration="11220000" />
+      <workItem from="1696346810131" duration="2625000" />
+      <workItem from="1696443816131" duration="3636000" />
+      <workItem from="1696447496096" duration="2718000" />
+      <workItem from="1696524125591" duration="14491000" />
+      <workItem from="1696601069443" duration="21936000" />
+      <workItem from="1696700331641" duration="12672000" />
+      <workItem from="1696713209609" duration="1121000" />
+      <workItem from="1696714374717" duration="57000" />
+      <workItem from="1696717828791" duration="4325000" />
+      <workItem from="1696794821044" duration="688000" />
+      <workItem from="1697016767812" duration="13162000" />
+      <workItem from="1697094157006" duration="257000" />
+      <workItem from="1697103003145" duration="1623000" />
+      <workItem from="1697126811958" duration="5709000" />
+      <workItem from="1697190374817" duration="680000" />
+      <workItem from="1697276024685" duration="17958000" />
+      <workItem from="1697315437572" duration="1563000" />
+      <workItem from="1697375039983" duration="9331000" />
+      <workItem from="1697454621744" duration="5877000" />
+      <workItem from="1697462778959" duration="2226000" />
+      <workItem from="1697481416889" duration="1437000" />
+      <workItem from="1697527805346" duration="5783000" />
+      <workItem from="1697544214450" duration="6158000" />
+      <workItem from="1697560418082" duration="4084000" />
+      <workItem from="1697573036588" duration="8515000" />
+      <workItem from="1697638526591" duration="18950000" />
+      <workItem from="1697878468890" duration="139000" />
+      <workItem from="1697895486861" duration="42000" />
+      <workItem from="1698745312317" duration="10095000" />
+      <workItem from="1698907275652" duration="5016000" />
+      <workItem from="1698999778848" duration="3839000" />
+      <workItem from="1699344273007" duration="7364000" />
+      <workItem from="1699698364248" duration="11947000" />
+      <workItem from="1699713413581" duration="4201000" />
+      <workItem from="1699954263314" duration="20102000" />
+      <workItem from="1700050289482" duration="3656000" />
+      <workItem from="1700118557342" duration="10315000" />
+      <workItem from="1700204965463" duration="243000" />
+      <workItem from="1700205255476" duration="22087000" />
+      <workItem from="1700248452448" duration="25000" />
+      <workItem from="1700731534187" duration="1146000" />
+      <workItem from="1700733277869" duration="1076000" />
+      <workItem from="1700734428493" duration="21302000" />
+      <workItem from="1700769271146" duration="3716000" />
+      <workItem from="1702713769463" duration="947000" />
+      <workItem from="1702715189169" duration="227000" />
+    </task>
+    <task id="LOCAL-00032" summary="syntax: some renaming">
+      <option name="closed" value="true" />
+      <created>1696703668288</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1696703668288</updated>
+    </task>
+    <task id="LOCAL-00033" summary="chore: replace static with interface realization">
+      <option name="closed" value="true" />
+      <created>1696704191474</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1696704191474</updated>
+    </task>
+    <task id="LOCAL-00034" summary="chore: separate constants to classes">
+      <option name="closed" value="true" />
+      <created>1696705199266</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1696705199266</updated>
+    </task>
+    <task id="LOCAL-00035" summary="chore: remove public set">
+      <option name="closed" value="true" />
+      <created>1696705671380</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1696705671380</updated>
+    </task>
+    <task id="LOCAL-00036" summary="chore: remove comparator">
+      <option name="closed" value="true" />
+      <created>1696710645425</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1696710645425</updated>
+    </task>
+    <task id="LOCAL-00037" summary="refactor: change multiple if conditions to linq">
+      <option name="closed" value="true" />
+      <created>1696710684870</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1696710684870</updated>
+    </task>
+    <task id="LOCAL-00038" summary="chore: some corrections">
+      <option name="closed" value="true" />
+      <created>1696710760229</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1696710760229</updated>
+    </task>
+    <task id="LOCAL-00039" summary="chore: add null validation">
+      <option name="closed" value="true" />
+      <created>1696711093077</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1696711093077</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat: add custom exception">
+      <option name="closed" value="true" />
+      <created>1696712122822</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1696712122822</updated>
+    </task>
+    <task id="LOCAL-00041" summary="chore: replace foreach with linq">
+      <option name="closed" value="true" />
+      <created>1696714333973</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1696714333973</updated>
+    </task>
+    <task id="LOCAL-00042" summary="chore: some corrections">
+      <option name="closed" value="true" />
+      <created>1696722168913</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1696722168913</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat: implement motherboard">
+      <option name="closed" value="true" />
+      <created>1697311046729</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311046729</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat: implement cpu">
+      <option name="closed" value="true" />
+      <created>1697311087912</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311087912</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat: implement cpu cooler">
+      <option name="closed" value="true" />
+      <created>1697311140561</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311140561</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat: implement ram">
+      <option name="closed" value="true" />
+      <created>1697311181198</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311181198</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat: implement gpu">
+      <option name="closed" value="true" />
+      <created>1697311214091</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311214091</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat: implement hard drives">
+      <option name="closed" value="true" />
+      <created>1697311336349</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311336349</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat: implement power supply">
+      <option name="closed" value="true" />
+      <created>1697311387314</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311387314</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat: implement wifi adapter">
+      <option name="closed" value="true" />
+      <created>1697311418217</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311418217</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat: implement specification">
+      <option name="closed" value="true" />
+      <created>1697311509299</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311509299</updated>
+    </task>
+    <task id="LOCAL-00052" summary="feat: implement component factory">
+      <option name="closed" value="true" />
+      <created>1697311664322</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1697311664322</updated>
+    </task>
+    <task id="LOCAL-00053" summary="feat: implement entities">
+      <option name="closed" value="true" />
+      <created>1697644037913</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644037914</updated>
+    </task>
+    <task id="LOCAL-00054" summary="feat: implement factory">
+      <option name="closed" value="true" />
+      <created>1697644148957</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644148957</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat: implement repository">
+      <option name="closed" value="true" />
+      <created>1697644210652</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644210652</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat: implement exceptions">
+      <option name="closed" value="true" />
+      <created>1697644229337</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644229337</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat: implement builder">
+      <option name="closed" value="true" />
+      <created>1697644262343</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644262344</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat: implement reports">
+      <option name="closed" value="true" />
+      <created>1697644294395</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644294396</updated>
+    </task>
+    <task id="LOCAL-00059" summary="feat: implement configurator">
+      <option name="closed" value="true" />
+      <created>1697644318924</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644318924</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactor: remove todo">
+      <option name="closed" value="true" />
+      <created>1697644415715</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644415715</updated>
+    </task>
+    <task id="LOCAL-00061" summary="feat: implement factory of all components">
+      <option name="closed" value="true" />
+      <created>1697646738648</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1697646738648</updated>
+    </task>
+    <task id="LOCAL-00062" summary="chore: add factory and reset">
+      <option name="closed" value="true" />
+      <created>1697646780153</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1697646780153</updated>
+    </task>
+    <task id="LOCAL-00063" summary="refactor: change params order">
+      <option name="closed" value="true" />
+      <created>1697657973885</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1697657973886</updated>
+    </task>
+    <task id="LOCAL-00064" summary="refactor: rename MATX to MicroATX">
+      <option name="closed" value="true" />
+      <created>1697658023335</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658023335</updated>
+    </task>
+    <task id="LOCAL-00065" summary="refactor: change attributes order">
+      <option name="closed" value="true" />
+      <created>1697658074359</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658074359</updated>
+    </task>
+    <task id="LOCAL-00066" summary="chore: add pc property">
+      <option name="closed" value="true" />
+      <created>1697658156176</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658156176</updated>
+    </task>
+    <task id="LOCAL-00067" summary="refactor: renaming">
+      <option name="closed" value="true" />
+      <created>1697658204753</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658204753</updated>
+    </task>
+    <task id="LOCAL-00068" summary="fix: add checking empty components' lists">
+      <option name="closed" value="true" />
+      <created>1697658310843</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658310843</updated>
+    </task>
+    <task id="LOCAL-00069" summary="fix: correct if statement">
+      <option name="closed" value="true" />
+      <created>1697658344389</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658344389</updated>
+    </task>
+    <task id="LOCAL-00070" summary="chore: change voltage type to double">
+      <option name="closed" value="true" />
+      <created>1697658377554</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658377554</updated>
+    </task>
+    <task id="LOCAL-00071" summary="test: implement tests">
+      <option name="closed" value="true" />
+      <created>1697658395803</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658395803</updated>
+    </task>
+    <task id="LOCAL-00072" summary="chore: remove base class for decorator">
+      <option name="closed" value="true" />
+      <created>1698911541198</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1698911541200</updated>
+    </task>
+    <task id="LOCAL-00073" summary="fix: GroupAddressee implement IAddressee">
+      <option name="closed" value="true" />
+      <created>1698911632619</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1698911632619</updated>
+    </task>
+    <task id="LOCAL-00074" summary="feat: implement adapters for some messengers">
+      <option name="closed" value="true" />
+      <created>1698911932044</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1698911932044</updated>
+    </task>
+    <task id="LOCAL-00075" summary="chore: remove Crayon.Output from message">
+      <option name="closed" value="true" />
+      <created>1698912264632</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1698912264632</updated>
+    </task>
+    <task id="LOCAL-00076" summary="feat: change logging to console output">
+      <option name="closed" value="true" />
+      <created>1699001985892</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1699001985892</updated>
+    </task>
+    <task id="LOCAL-00077" summary="chore: remove nullable">
+      <option name="closed" value="true" />
+      <created>1699002889463</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1699002889463</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fix: replace logging with console output">
+      <option name="closed" value="true" />
+      <created>1699002985936</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1699002985936</updated>
+    </task>
+    <task id="LOCAL-00079" summary="feat: improve file system manager">
+      <option name="closed" value="true" />
+      <created>1699719367453</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1699719367454</updated>
+    </task>
+    <task id="LOCAL-00080" summary="chore: backup">
+      <option name="closed" value="true" />
+      <created>1700240099734</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1700240099734</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:NSubstitute" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/lab-3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat: implement exceptions" />
+    <MESSAGE value="feat: implement builder" />
+    <MESSAGE value="feat: implement reports" />
+    <MESSAGE value="feat: implement configurator" />
+    <MESSAGE value="refactor: remove todo" />
+    <MESSAGE value="feat: implement factory of all components" />
+    <MESSAGE value="chore: add factory and reset" />
+    <MESSAGE value="refactor: change params order" />
+    <MESSAGE value="refactor: rename MATX to MicroATX" />
+    <MESSAGE value="refactor: change attributes order" />
+    <MESSAGE value="chore: add pc property" />
+    <MESSAGE value="refactor: renaming" />
+    <MESSAGE value="fix: add checking empty components' lists" />
+    <MESSAGE value="fix: correct if statement" />
+    <MESSAGE value="chore: change voltage type to double" />
+    <MESSAGE value="test: implement tests" />
+    <MESSAGE value="chore: remove base class for decorator" />
+    <MESSAGE value="fix: GroupAddressee implement IAddressee" />
+    <MESSAGE value="feat: implement adapters for some messengers" />
+    <MESSAGE value="chore: remove Crayon.Output from message" />
+    <MESSAGE value="feat: change logging to console output" />
+    <MESSAGE value="chore: remove nullable" />
+    <MESSAGE value="fix: replace logging with console output" />
+    <MESSAGE value="feat: improve file system manager" />
+    <MESSAGE value="chore: backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: backup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Lab1/Services/FlightManager.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\maksi\RiderProjects\maksimugus\src\Lab1\Services\FlightManager.cs" initialLine="13" containingFunctionPresentation="Method 'Run'" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Lab4/Kernel/Services/Visitors/OutputVisitor.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\maksi\RiderProjects\maksimugus\src\Lab4\Kernel\Services\Visitors\OutputVisitor.cs" initialLine="24" containingFunctionPresentation="Method 'Visit'" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Lab4/Kernel/Services/Managers/FileSystemManager.cs</url>
+          <line>76</line>
+          <properties documentPath="C:\Users\maksi\RiderProjects\maksimugus\src\Lab4\Kernel\Services\Managers\FileSystemManager.cs" initialLine="76" containingFunctionPresentation="Method 'ConstructCurrentDirectory'" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Lab4/Services/Visitors/DirectoryVisitor.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\maksi\RiderProjects\labs\src\Lab4\Services\Visitors\DirectoryVisitor.cs" initialLine="25" containingFunctionPresentation="Method 'Visit'">
+            <startOffsets>
+              <option value="751" />
+            </startOffsets>
+            <endOffsets>
+              <option value="752" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Lab4/Services/Handlers/FileShowHandler.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\maksi\RiderProjects\labs\src\Lab4\Services\Handlers\FileShowHandler.cs" initialLine="18" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="511" />
+            </startOffsets>
+            <endOffsets>
+              <option value="555" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
